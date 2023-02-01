@@ -9,12 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body class="indexbody">
     <img src="images/8bitcityscape.jpg" alt="8bitcityscape" class="eightbit" width="100%">
     
     <div class="top">
+        <img class="cloud1" src="images/cloud.png" alt="cloud" width="60px">
+        <img class="cloud2" src="images/cloud.png" alt="cloud" width="60px">
         <h1>Jason Waryold</h1>
         <h2>I wanna learn how to desgin useful and cool websites/webpages.</h2>
     </div>
@@ -27,15 +30,17 @@
         <h2 class="skill">My Skills</h2>
         <h3>Languages</h3>
         <div class="row">
-            <div class="columnleft">
-                <img width="40%" src="images/java.png" alt="javaicon">
+            <div class="column left">
+                <img width="81.28px" height="151.2px" src="images/java.png" alt="javaicon">
             </div>
-            <div class="columnright">
+            <div class="column right">
                 <ul class="skills">
                     <li>Java</li>
                     <li>Python</li>
                     <li>C</li>
                     <li>SQL</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </ul>
             </div>
         </div>
@@ -45,21 +50,41 @@
     
     <div class="bottom">
         <h3>Leadership and Experience</h3>
-        <dl>
-            <dt>2021</dt><dd>Kohls Associate</dd>
-            <dt>2020-2022</dt><dd>Seasonal Office Work @ <a href="https://mercury-biz.com/" target="_blank">Mercury Business Associates</a></dd>
-        </dl>
+        <div class="row2">
+            <div class="column left2"> 
+                <img src="images/merclogo.png" alt="mercury-biz" width="300px">
+            </div>
+            <div class="column right2">
+                <dl class="leadership">
+                    <dt>2022</dt><dd>Kohls Associate</dd>
+                    <dt>2020-2022</dt><dd>Seasonal Office Work @ <a href="https://mercury-biz.com/" target="_blank">Mercury Business Associates</a></dd>
+                </dl>
+            </div>
+        </div>
         <h3>Skills</h3>
-        <dl>
-            <dt>Java</dt><dd>⭐⭐⭐</dd>
-            <dt>Communication</dt><dd>⭐⭐⭐⭐</dd>
-            <dt>Creativity</dt><dd>⭐⭐</dd>
-        </dl>
-        <a href="contact.html" target="_blank">Get In Touch</a>
+        <div class="row3">
+            <div class="left3">
+                <dl>
+                    <dt>Java</dt><dd>⭐⭐⭐</dd>
+                    <dt>Communication</dt><dd>⭐⭐⭐⭐</dd>
+                    <dt>Creativity</dt><dd>⭐⭐</dd>
+                </dl>
+            </div>
+            <div class="right3">
+                <img src="images/cmd.png" alt="commandprompticon" width="100px">
+            </div>
+        </div>
+        <div class="contactme">
+            <form action="contact.html" target="_blank">
+                <input class="intouch" type="submit"value="Get In Touch"></button>
+            </form>
+        </div>
     </div>
 
     <hr>
-    <p>©Jason Waryold</p>
+    <div class="cr">
+        <p>©Jason Waryold</p>
+    </div>
 </body>
 
 </html>
