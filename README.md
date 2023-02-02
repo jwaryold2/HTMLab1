@@ -1,2 +1,3 @@
 # HTMLab1
-# Link to GithubHosted Website
+# Link to Github Hosted Website
+https://jwaryold2.github.io/HTMLab1/
