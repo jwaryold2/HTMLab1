@@ -11,6 +11,13 @@
     <input type="input" placeholder="enter streamer's name" id="textb">
     <button id="btn">Submit Name </button>
     <button id="divc">Create new div w/ id twitch-embed</button>
-    <script src="js/streams.js"></script>
+    <script src="js/streams.js">
+        const btn = document.getElementsById('btn');
+        btn.addEventListener('click', function master() {
+            const inputval = document.getElementsById('textb');
+            return inputval;
+        })
+        console.log(inputval);
+    </script>
 </body>
 </html>
