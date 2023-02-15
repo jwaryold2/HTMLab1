@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="input" placeholder="enter streamer's name" id="textb">
+    <button id="btn">Submit Name </button>
+    <button id="divc">Create new div w/ id twitch-embed</button>
+    <script>
+        const btn = document.getElementById('btn')
+        btn.addEventListener('click', function master() {
+            let master = document.getElementsById('textb').value;
+            new Twitch.Player("twitch-embed", {
+                channel: master
+            });
+        })
+        const divc = document.getElementById('divc')
+        divc.addEventListener('click', function addDiv() {
+            let mas = document.getElementsById('twitch-embed');
+            const jk = document.createElement('div');
+            jk.style.display="flex";
+            jk.style.flexDirection="row";
+            mas.appendChild(jk)
+        }
+    </script>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+    <!-- Load the Twitch embed script -->
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+</body>
+</html>
