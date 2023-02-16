@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/stream.css">
+</head>
+<body>
+    <div class="fle">
+        <h1>Enter a Streamer's Name to Display an embed of their stream + chat along side</h1><br>
+        <input type="text" placeholder="name" id="tw">
+        <button id="btn" onclick="de(document.getElementById('tw').value)" class="addbutton">press</button>
+    </div>
+    <br>
+    <div class="vb">
+        <div id="twitch-embed"></div>
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+            let btn = document.getElementById('btn');
+            function de(input) { 
+                console.log(input);
+                const dear = new Twitch.Embed("twitch-embed", {
+                    width: 600,
+                    height: 650,
+                    muted: true,
+                    channel: input,
+                })
+                document.body.appendChild(dear);
+            }
+        </script>
+    </div>
+</body>
+</html>
