@@ -1,0 +1,17 @@
+body {
+    background-image: url("../images/w.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.fle {
+    text-align: center;
+    justify-content: center;
+}
+#twitch-embed {
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    width: 100vh;
+    grid-gap: 30px;
+}
